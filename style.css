@@ -25,7 +25,23 @@ header{
    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
    
 }
-
+section{
+    padding: 2rem 9%;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background:rgb(23, 22, 22) ;
+    color:rgb(236, 222, 231);
+    padding: 1rem 2rem;
+    cursor:pointer;
+    font-size: 1.7rem;
+     
+}
+.btn:hover{
+background: rgb(231, 133, 150);
+}
 
 .logo{
     font-size: 35px;
@@ -67,9 +83,33 @@ header{
     border: .1rem solid rgba(0,0,0,.3);
     display: none;
 }
+.home{
+    display:flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url("https://img.freepik.com/free-photo/top-view-flowers-with-copy-space_23-2148172556.jpg?semt=ais_hybrid&w=740")no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    max-width: 50rem;
+} 
+.home .content h3{
+    font-size:6rem;
+    color:rgb(23, 22, 22);
+}
+.home .content span{
+    font-size:3.5rem;
+    color:rgb(231, 133, 150);
+    padding:1rem 0;
+    line-height: 1.5;
+}
+.home .content p{
+    font-size:1.5rem;
+    color:#999;
+    padding:1rem 0;
+    line-height: 1.5;
 
-body{
-    background-color:rgb(236, 202, 224);
 }
 
 
@@ -113,6 +153,12 @@ body{
   header{
     padding:2rem;
   }
+   section{
+    padding:2rem;
+  }
+  .home{
+    background-position: left; 
+  }
 }
 @media (max-width: 768px){
  header .fa-bars{
@@ -135,7 +181,23 @@ body{
     background:#f4eef3;
     border: .1rem solid rgba(0,0,0,.1);
     display:block;
-}}
+}
+.home .content h3{
+    font-size: 5rem;
+
+
+}
+.home .content span{
+    font-size: 2.5rem;
+    
+
+}
+.home .content p{
+    font-size: 1rem;
+    
+
+}
+}
 @media (max-width: 450px){
   html{
     font-size:50%;
