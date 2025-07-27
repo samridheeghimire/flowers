@@ -28,6 +28,18 @@ header{
 section{
     padding: 2rem 9%;
 }
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color:rgb(23, 22, 22);
+    padding: 1rem;
+    margin:3rem 0;
+    background:rgba(255, 51, 153, .05);
+}
+.heading span{
+    color:rgb(231, 133, 150);
+    
+}
 .btn{
     display: inline-block;
     margin-top: 1rem;
@@ -111,6 +123,61 @@ background: rgb(231, 133, 150);
     line-height: 1.5;
 
 }
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+.about .row .video-container video{
+    width: 100%;
+    height: 100%;
+    border: 1.5rem solid #fff;
+    border-radius: .55rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    height:100%;
+    object-fit: cover;
+    
+}
+.about .row .video-container{
+    flex: 1 1 40rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.about .row .video-container video:hover{
+    transform: scale(1.05);
+    transition: .2s linear;
+}
+.about .row .video-container h3{
+    position: absolute;
+    top:50%; transform: translate(-50% -50%);
+    width: 100%;
+    padding:1rem 2rem;
+    text-align: center;
+    background:#fff ;
+    font-size: 3rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+.about .row .content{
+    flex: 1 1 40rem;
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color:rgb(23, 22, 22);
+}
+.about .row .content p{
+    font-size: 1.5rem;
+    color:#999;
+    padding: 5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
 
 
 
@@ -202,7 +269,12 @@ background: rgb(231, 133, 150);
   html{
     font-size:50%;
     }  
-  
+  .heading{
+    
+    font-size: 3rem;
+    padding: 1rem;
+    margin: 2rem 0;
+  }
 }
 
 
